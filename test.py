@@ -4,8 +4,7 @@ import logging
 import asyncio
 import time
 
-class Test(loader.Module):
+class test(loader.Module):
     strings = {"name": "Test"}
-
     async def testcmd(self, message):
-        await client.send_message('chat_id', 'Привет это мой модуль!')
+        await message.respond("Привет это мой модуль!")
