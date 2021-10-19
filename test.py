@@ -1,10 +1,6 @@
-from .. import loader, utils
+from .. import loader
 
-import logging
-import asyncio
-import time
-
-class test(loader.Module):
+class testMod(loader.Module):
     strings = {"name": "Test"}
     async def testcmd(self, message):
         await message.respond("Привет это мой модуль!")
