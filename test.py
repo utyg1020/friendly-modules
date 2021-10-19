@@ -1,4 +1,6 @@
 from .. import loader
+async def client_ready(self, client, db):
+        self.db = db 
 
 class testMod(loader.Module):
     strings = {"name": "Test"}
